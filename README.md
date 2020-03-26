@@ -10,7 +10,7 @@ Do we ensure that input controls like text, textarea or select always presents t
 - Den state vi har i vores component bliver opbygget continuerligt på baggrund af det der er står i inputfelterne via onChange.
 Altså hver gang der bliver ændret et tegn i et input felt kører vi en metode der setter state i componentet til det aktuelle.
 
-3)What is the purpose of doing event.preventDefault() in an event handler?
+3) What is the purpose of doing event.preventDefault() in an event handler?
 - event.prevetDefault gør at vi ikke kontakter serveren og får en ny side leveret.
 
 4) What would be the effect of NOT doing event.preventDefault in a submit handler
@@ -24,6 +24,6 @@ Altså hver gang der bliver ændret et tegn i et input felt kører vi en metode 
 - Easier to implement on-the-fly(onChange) validations.
 - Easier to ensure inputs are in the specific format, like telephone numbers.
 
-6)Explain in words what it takes to implement the "Controlled Component" pattern for a form
+6) Explain in words what it takes to implement the "Controlled Component" pattern for a form
 - Basically skal du have en onChange på alle dine inputs som kører en metode der opdatere staten hver gang der sker en ændring i inputfelterne.
 Så skal du samtiding hver gang componenter re-render sætte value af inputfeltet med det staten indeholder, så state og inputfelt altid er enige.
