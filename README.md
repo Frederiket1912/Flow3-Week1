@@ -1,6 +1,6 @@
 # Flow3-Week1
 
-Svar til spørgsmål fra torsdagsopgaven "Forms and Controlled Components":
+## Svar til spørgsmål fra torsdagsopgaven "Forms and Controlled Components":
 
 1) In a Controlled Component React state is made the "Single source of truth", so how:
 Do we ensure that input controls like text, textarea or select always presents the value found in the components state?
@@ -28,7 +28,7 @@ Altså hver gang der bliver ændret et tegn i et input felt kører vi en metode 
 - Basically skal du have en onChange på alle dine inputs som kører en metode der opdatere staten hver gang der sker en ændring i inputfelterne.
 Så skal du samtiding hver gang componenter re-render sætte value af inputfeltet med det staten indeholder, så state og inputfelt altid er enige.
 
-Svar til spørgsmål fra torsdagsopgaven "Lifting State Up":
+## Svar til spørgsmål fra torsdagsopgaven "Lifting State Up":
 
 1) What is meant by the react term “Lifting State Up”?
 - Lifting state up er det du gør når to components der ikke har parent-child relation skal udveksle data. Man sender en metode med fra parent componenten til det ene child component, når det child component kører metoden har parent så adgang til argumenter/output fra metoden, fx kan man bruge det til at sette en state i parent componentet. Dataen kan så sendes ned til det andet child component som skulle bruge dataen.
