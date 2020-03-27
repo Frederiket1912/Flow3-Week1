@@ -2,7 +2,7 @@
 
 Ugens opgaver er i mapperne under den dag de passer til. Projekterne er navngivet efter title på selve dokumentet med opgaven, og altså ikke nødvendigvis det samme som det linksne hedder her https://dat-spring-2020.netlify.com/Flow-3/week1/SP6/. Nogle af dagene lavede vi øveleser i løbet af undervisningen som jeg, fordi det tager noget tid at lave nye react projekter, har lagt i samme projekt som den første af hver dags ogaver. Disse klasse opgaver har jeg kaldt class exercise, og man kan i index filerne se hvilke exercises der ikke er en del af ugens opgaver. 
 
-Disse filer er class exercises:
+Disse filer er class exercises: <br>
 Fra tirsdag i projektet "es6-and-react-functional-components-and-props":
  - "App.js"
 
