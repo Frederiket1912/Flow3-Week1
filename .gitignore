@@ -74,3 +74,17 @@
 /Torsdag/lifting-state-up/npm-debug.log*
 /Torsdag/lifting-state-up/yarn-debug.log*
 /Torsdag/lifting-state-up/yarn-error.log*
+
+/Torsdag/react-crud-rest-exercise/node_modules
+/Torsdag/react-crud-rest-exercise/.pnp
+/Torsdag/react-crud-rest-exercise/.pnp.js
+/Torsdag/react-crud-rest-exercise/coverage
+/Torsdag/react-crud-rest-exercise/build
+/Torsdag/react-crud-rest-exercise/.DS_Store
+/Torsdag/react-crud-rest-exercise/.env.local
+/Torsdag/react-crud-rest-exercise/.env.development.local
+/Torsdag/react-crud-rest-exercise/.env.test.local
+/Torsdag/react-crud-rest-exercise/.env.production.local
+/Torsdag/react-crud-rest-exercise/npm-debug.log*
+/Torsdag/react-crud-rest-exercise/yarn-debug.log*
+/Torsdag/react-crud-rest-exercise/yarn-error.log*
