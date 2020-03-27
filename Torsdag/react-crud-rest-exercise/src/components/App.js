@@ -37,11 +37,8 @@ function App({ apiFacade }) {
   const storeAddEditPerson = person => {
     //Call this from the AddEditPerson control with the person to Add or Edit and Add/Edit via the apiFacade
     console.log(person);
-    setError("FEJL");
-    console.log("der burdevære en fejl", error);
-    setPersonToAddEdit(person);
-    console.log("Person to add edit :", personToAddEdit);
-    apiFacade().addEditPerson(personToAddEdit);
+    setPersonToAddEdit({ ...person });
+    apiFacade().addEditPerson(person);
   };
 
   const deletePerson = id => {
