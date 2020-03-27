@@ -41,3 +41,16 @@ Data flyder normalt fra top to bottom, altså fra parent til child, men man kan 
 
 4) Lifting state up, involves a great deal of boilerplate code, what’s the benefit we get from doing “things” like this?
 Hele ideen ved at have forskellige componenter der tager sig af specifikke ting kender vi også fra Java og andre programeringssprog. Det gør koden lettere at overskue, lettere at tilføje features til og lettere opdatere/redigere i. Og hvis man vil dele sin kode op kommer der tilfælde hvor du får brug for at en sibling kender noget data fra en anden sibling.
+
+## Svar til spørgsmål fra fredagsopgaven:
+1) Describe the term Single Page Application and why it has become so popular for modern web-applications
+- SPA betyder at alt foregår på en enkelt side og alt på siden foregår dynamisk ved at man udfylder forskellige dele af DOM'en afhængigt af hvordan brugeren klikker rundt på siden el.lign.
+
+2) Explain the “recommended” React way of passing data into Components (at the top, or at the bottom or..)
+- Man giver data til components via props. Hvis props er baseret på en components state vil de automatisk blive givet videre hvis sateten(altså props) ændre sig, da det trigger en re-render af componentet og de andre componenter den giver props med til vil blive remounted med de opdaterede props.
+
+3) Explain how JavaScript array methods, like filter, map and (reduce) can be used to generate dynamic HTML structures (tables, ul's etc.)
+- Array metoder kan bruges til at gøre en side dynamisk ved at, hvis de bliver kørt på props der ændre sig, så bliver siden opdateret når componentet modtager nye props.
+
+4) Explain about the Observer pattern, and where you have used it, both with Java and JavaScript.
+- Observer patternet er hvor en række objekter el.lign. er afhængig af staten i et enkelt objekt. I JS bruger vi det fx hvis et component der skal render en tabel er afhængig af staten i et andet component, fx hvis den skal rendere en liste af personer som er sat some state i et andet component og kan ændre sig afhængig af bruger inputs. I Java er det vel lidt det samme. Fx hvis en Person class har en true/false om de er admin og en række metoder kun skal være tilgængelige for dem og kun skal blive vist hvis Personen der er logget ind er admin.
