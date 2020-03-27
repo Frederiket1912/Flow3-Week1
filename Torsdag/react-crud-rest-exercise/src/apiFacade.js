@@ -30,14 +30,19 @@ export default function ApiFacade() {
   }
 
   function addEditPerson(person) {
-    console.log("Person in apiFacade : " + JSON.stringify(person));
-    const options = makeOptions("POST", person);
-    console.log("Options : " + JSON.stringify(options));
+    let options;
+    if (person.id === "") {
+      options = makeOptions("POST", person);
+    } else {
+      options = makeOptions("PUT", person);
+      URL = URL + "/" + person.id;
+    }
     return fetch(URL, options).then(handleHttpErrors);
   }
 
   function deletePerson(id) {
-    //Complete me
+    const options = makeOptions("DELETE");
+    return fetch(URL + "/" + id, options).then(handleHttpErrors);
   }
 
   return {

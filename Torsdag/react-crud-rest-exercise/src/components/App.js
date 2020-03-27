@@ -43,6 +43,7 @@ function App({ apiFacade }) {
 
   const deletePerson = id => {
     //Call this from the AllPerson control with the id for the person to delete
+    apiFacade().deletePerson(id);
   };
 
   const editPerson = person => {
