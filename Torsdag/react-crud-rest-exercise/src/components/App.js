@@ -13,6 +13,7 @@ function App({ apiFacade }) {
     apiFacade()
       .getPersons()
       .then(data => {
+        data.push(personToAddEdit);
         setPersons(data);
         console.log("DATA", data);
       })
@@ -32,12 +33,12 @@ function App({ apiFacade }) {
           setError("There was a network error");
         }
       });
-  }, []);
+  }, [personToAddEdit]);
 
   const storeAddEditPerson = person => {
     //Call this from the AddEditPerson control with the person to Add or Edit and Add/Edit via the apiFacade
     console.log(person);
-    setPersonToAddEdit({ ...person });
+    setPersonToAddEdit(person);
     apiFacade().addEditPerson(person);
   };
 

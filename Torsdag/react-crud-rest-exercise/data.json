@@ -1,13 +1,6 @@
 {
   "api": [
     {
-      "id": "59dde0def94062f06bcc1211",
-      "age": 27,
-      "name": "Gale Sullivan",
-      "gender": "female",
-      "email": "galesullivan@zedalis.com"
-    },
-    {
       "id": "59dde0deb5516ea4f23590f9",
       "age": 31,
       "name": "Karyn Fulton",
@@ -27,34 +20,6 @@
       "name": "Marguerite Hunter",
       "gender": "female",
       "email": "margueritehunter@zedalis.com"
-    },
-    {
-      "id": "-WwB7SW",
-      "age": "23",
-      "name": "Hej",
-      "email": "hej@hej.dk",
-      "gender": "male"
-    },
-    {
-      "id": "v6MIpqn",
-      "age": "23",
-      "name": "Sss",
-      "email": "ds@fqwd",
-      "gender": "female"
-    },
-    {
-      "id": "9ZcSCZx",
-      "age": "56",
-      "name": "Hans",
-      "email": "heu@23",
-      "gender": "male"
-    },
-    {
-      "id": "3TNgnP4",
-      "age": "234",
-      "name": "Palle",
-      "email": "qfei@f",
-      "gender": "male"
     }
   ]
 }
